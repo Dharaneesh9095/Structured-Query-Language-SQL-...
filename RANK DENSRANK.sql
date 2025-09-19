@@ -17,9 +17,4 @@ select *, rank() over(partition by department order by mark desc) as Rank_Marks,
 as DenseRank_Marks from students_details;
 
 
-create temporary table temp_table(
-		id int,
-        name varchar(20),
-        contact bigint);
 
-select * from temp_table;
